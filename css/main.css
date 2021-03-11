@@ -303,7 +303,7 @@ body {
 }
 
 .header-bottom {
-  padding-bottom: 64px;
+  padding-bottom: 55px;
 }
 
 .header-bottom__text {
@@ -318,7 +318,110 @@ body {
   position: absolute;
   left: 109%;
   top: 38%;
-  background: url("../../img/header-arrow.png") no-repeat;
+  background: url("../img/header-arrow.png") no-repeat;
   width: 118px;
   height: 83px;
+}
+
+.steps {
+  padding-top: 57px;
+  padding-bottom: 74px;
+}
+
+.steps__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 85px;
+}
+
+.steps__number {
+  width: 80px;
+  height: 80px;
+  background-color: var(--main-color);
+  font-family: "Roboto Slab", serif;
+  font-size: 60.5px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 5px;
+  padding-bottom: 7px;
+  margin-right: 18px;
+}
+
+.steps__title {
+  font-family: "Roboto Slab", serif;
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 9px;
+  margin-bottom: 3px;
+}
+
+.steps__subtitle {
+  line-height: 25px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #9f9f9f;
+}
+
+.steps__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.steps__item {
+  width: 33.3333%;
+  text-align: center;
+}
+
+.steps__line {
+  margin: 0 auto;
+  margin-bottom: 18px;
+  width: 144px;
+  height: 8px;
+  background-color: var(--main-color);
+}
+
+.steps__icon {
+  margin-bottom: 14px;
+}
+
+.steps__icon--mr {
+  padding-bottom: 2px;
+}
+
+.steps__text {
+  font-family: "Roboto Slab", serif;
+  font-size: 16.5px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 12px;
+}
+
+.steps__description {
+  max-width: 224px;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #9f9f9f;
+  margin: 0 auto;
 }
