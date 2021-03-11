@@ -2,6 +2,111 @@
   --main-color: #ffe92d;
 }
 
+/* Slider */
+
+.slick-slider {
+  position: relative;
+  display: block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slick-track:before,
+.slick-track:after {
+  content: "";
+  display: table;
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+
+.slick-slide img {
+  display: block;
+}
+
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
 *,
 *:before,
 *:after {
@@ -211,6 +316,10 @@ body {
   letter-spacing: 0.1em;
   margin-bottom: 22px;
   max-width: 505px;
+}
+
+.header-main__title--block {
+  display: block;
 }
 
 .header-main__title--yellow {
@@ -653,6 +762,7 @@ body {
   left: 78%;
   top: -240px;
   z-index: 1;
+  pointer-events: none;
 }
 
 .about__link:after {
@@ -665,6 +775,7 @@ body {
   left: 88%;
   top: 21px;
   z-index: 1;
+  pointer-events: none;
 }
 
 .about__icon-wrapper {
@@ -724,4 +835,117 @@ body {
   left: 106%;
   top: 44%;
   background: url("../img/about_arrow.png") no-repeat;
+}
+
+.reviews {
+  padding-top: 65px;
+  padding-bottom: 167px;
+}
+
+.reviews__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 54px;
+}
+
+.reviews__number {
+  min-width: 80px;
+  height: 80px;
+  background-color: var(--main-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: "Roboto Slab", serif;
+  font-size: 52px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-right: 5px;
+  padding-left: 8px;
+  letter-spacing: 0.1em;
+  margin-right: 18px;
+}
+
+.reviews__title {
+  font-family: "Roboto Slab", serif;
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 10px;
+  margin-bottom: 3px;
+}
+
+.reviews__subtitle {
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #9f9f9f;
+}
+
+.reviews__slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.reviews__icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 15px;
+  background: url(../img/reviews_quotes.png) no-repeat center, var(--main-color);
+}
+
+.reviews__text {
+  font-size: 11.8px;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  max-width: 302px;
+  margin-bottom: 14px;
+}
+
+.reviews__name {
+  font-size: 15.6px;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
+  color: #a8a8a8;
+}
+
+.reviews__item {
+  width: 45%;
+}
+
+.slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 121.3%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.slick-dots li button {
+  font-size: 0;
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+  border-radius: 100%;
+  padding: 0;
+}
+
+.slick-dots li + li {
+  margin-left: 17px;
 }
