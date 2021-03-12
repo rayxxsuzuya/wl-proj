@@ -949,3 +949,130 @@ body {
 .slick-dots li + li {
   margin-left: 17px;
 }
+
+.experience {
+  background-color: #000;
+  padding-top: 54px;
+  padding-bottom: 53px;
+}
+
+.experience__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 61px;
+}
+
+.experience__icon {
+  width: 80px;
+  height: 80px;
+  background: url("../img/experience_icon.png") no-repeat center, var(--main-color);
+  margin-right: 17px;
+}
+
+.experience__title {
+  font-family: "Roboto Slab", serif;
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+
+.experience__subtitle {
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #9f9f9f;
+}
+
+.experience__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.experience__item {
+  width: calc(100% / 3);
+  position: relative;
+}
+
+.experience__item:before {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  top: 50px;
+  background-color: var(--main-color);
+}
+
+.experience__item:last-child:before {
+  display: none;
+}
+
+.experience__date {
+  font-family: "Roboto Slab", serif;
+  font-size: 14.4px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+
+.experience__post {
+  font-size: 9.1px;
+  color: #fff;
+  letter-spacing: 0.1em;
+  margin-bottom: 16px;
+}
+
+.experience__circle {
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  background-color: var(--main-color);
+  margin-bottom: 22px;
+}
+
+.experience__company-name {
+  font-size: 11.1px;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  margin-bottom: 13px;
+}
+
+.experience__description {
+  font-size: 11.1px;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  max-width: 336px;
+}
+
+.experience__bottom {
+  margin-top: 61px;
+  display: inline-block;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #9f9f9f;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.experience__bottom:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 118px;
+  height: 83px;
+  background: url(../img/experience_arrow.png) no-repeat;
+  left: 105.6%;
+  top: 43%;
+}
