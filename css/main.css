@@ -861,6 +861,29 @@ body {
 .reviews {
   padding-top: 65px;
   padding-bottom: 167px;
+  position: relative;
+}
+
+.reviews::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 158px;
+  height: 230px;
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 0;
+  left: 0;
+}
+
+.reviews::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 116px;
+  height: 116px;
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 163px;
+  left: 100px;
 }
 
 .reviews__wrapper {
@@ -1019,6 +1042,7 @@ body {
 .experience__item {
   width: calc(100% / 3);
   position: relative;
+  padding-right: 20px;
 }
 
 .experience__item:before {
@@ -1388,6 +1412,13 @@ body {
   }
 }
 
+@media (max-width: 1550px) {
+  .reviews:before,
+  .reviews:after {
+    display: none;
+  }
+}
+
 @media (max-width: 1371px) {
   .about__right:before {
     display: none;
@@ -1570,6 +1601,26 @@ body {
   }
 }
 
+@media (max-width: 833px) {
+  .experience__block {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .experience__item {
+    width: 50%;
+    margin-bottom: 39px;
+  }
+
+  .experience__item:nth-child(2):before {
+    display: none;
+  }
+
+  .experience__bottom {
+    margin-top: 22px;
+  }
+}
+
 @media (max-width: 741px) {
   .steps__wrapper {
     -ms-flex-wrap: wrap;
@@ -1589,6 +1640,19 @@ body {
 @media (max-width: 727px) {
   .reviews__text {
     max-width: 525px;
+  }
+
+  .experience {
+    padding-bottom: 38px;
+  }
+
+  .experience__title {
+    font-size: 24px;
+  }
+
+  .experience__bottom {
+    line-height: 17px;
+    max-width: 189px;
   }
 }
 
@@ -1662,6 +1726,11 @@ body {
   .about__photo {
     max-width: 100%;
   }
+
+  .experience__wrapper {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 541px) {
@@ -1685,6 +1754,14 @@ body {
   .about__container,
   .about .container {
     padding: 0 0 !important;
+  }
+
+  .experience__item {
+    width: 100%;
+  }
+
+  .experience__item:nth-child(1):before {
+    display: none;
   }
 }
 
@@ -1781,5 +1858,10 @@ body {
 
   .header-main__call-text {
     font-size: 12.7px;
+  }
+
+  .experience__bottom:after {
+    left: 92.6%;
+    top: 53%;
   }
 }
