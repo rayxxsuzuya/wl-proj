@@ -1452,6 +1452,22 @@ body {
   .about__left {
     margin-right: 30px;
   }
+
+  .footer__wrapper {
+    margin-top: 54px;
+  }
+
+  .footer__input-name,
+  .footer__input-phone,
+  .footer__input-email {
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  .footer__form {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 1111px) {
@@ -1707,6 +1723,20 @@ body {
   .about__title {
     font-size: 24px;
   }
+
+  .footer__subtitle {
+    max-width: 450px;
+  }
+
+  .footer__wrapper {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .footer__left {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 675px) {
@@ -1742,6 +1772,13 @@ body {
   .experience__wrapper {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+  }
+
+  .footer__input-name,
+  .footer__input-phone,
+  .footer__input-email {
+    width: 100%;
+    margin-right: 0;
   }
 }
 
@@ -1832,6 +1869,18 @@ body {
     font-size: 31.4px;
     line-height: 0.9;
   }
+
+  .footer__title {
+    margin-bottom: 10px;
+    font-size: 24.5px;
+  }
+
+  .footer__subtitle {
+    font-size: 15px;
+    line-height: 20px;
+    max-width: 320px;
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 446px) {
@@ -1878,6 +1927,19 @@ body {
   .steps__subtitle {
     max-width: 350px;
     line-height: 18px;
+  }
+
+  .footer__left {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .footer__logo {
+    margin-bottom: 6px;
+  }
+
+  .footer__text-wrapper {
+    width: 100%;
   }
 }
 
