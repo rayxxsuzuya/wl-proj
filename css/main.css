@@ -1382,6 +1382,23 @@ body {
   color: #ffffff;
 }
 
+@media (max-width: 1875px) {
+  .about:after {
+    display: none;
+  }
+}
+
+@media (max-width: 1371px) {
+  .about__right:before {
+    display: none;
+  }
+
+  .about__container:after,
+  .about__container:before {
+    display: none;
+  }
+}
+
 @media (max-width: 1300px) {
   .header:before,
   .header:after {
@@ -1391,6 +1408,12 @@ body {
   .steps:before,
   .steps:after {
     display: none;
+  }
+}
+
+@media (max-width: 1151px) {
+  .about__left {
+    margin-right: 30px;
   }
 }
 
@@ -1404,6 +1427,38 @@ body {
   .header-main__text {
     margin-right: 30px;
     margin-top: 0;
+  }
+}
+
+@media (max-width: 1083px) {
+  .about {
+    padding-bottom: 45px;
+  }
+
+  .about__container {
+    padding: 0 20px;
+  }
+
+  .about__case {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .about__left {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    margin-right: 0;
+    padding-left: 24px;
+  }
+
+  .about__right {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
   }
 }
 
@@ -1531,6 +1586,12 @@ body {
   }
 }
 
+@media (max-width: 727px) {
+  .reviews__text {
+    max-width: 525px;
+  }
+}
+
 @media (max-width: 700px) {
   .header-top {
     -ms-flex-wrap: wrap;
@@ -1567,11 +1628,39 @@ body {
   .header-top__right {
     margin: 0 auto;
   }
+
+  .about__meet-wrapper {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .about__title {
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 600px) {
   .container {
     padding: 0 15px;
+  }
+}
+
+@media (max-width: 556px) {
+  .about__link:before,
+  .about__link:after {
+    display: none;
+  }
+
+  .about__left {
+    padding-right: 20px;
+  }
+
+  .about__right:after {
+    display: none;
+  }
+
+  .about__photo {
+    max-width: 100%;
   }
 }
 
@@ -1591,6 +1680,50 @@ body {
 
   .steps__wrapper {
     margin-bottom: 50px;
+  }
+
+  .about__container,
+  .about .container {
+    padding: 0 0 !important;
+  }
+}
+
+@media (max-width: 460px) {
+  .about__call-icon {
+    max-width: 100%;
+  }
+
+  .about__icon-wrapper {
+    width: 40px;
+    height: 40px;
+  }
+
+  .about__call-text {
+    font-size: 15px;
+    height: 40px;
+  }
+
+  .about__second:after {
+    display: none;
+  }
+
+  .about__left {
+    padding-right: 15px;
+    padding-left: 15px;
+    overflow: hidden;
+  }
+
+  .about__description {
+    max-width: none;
+  }
+
+  .about__item {
+    border-left: 15px solid #000;
+  }
+
+  .about__stat {
+    font-size: 31.4px;
+    line-height: 0.9;
   }
 }
 
